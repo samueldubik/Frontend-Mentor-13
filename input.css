@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+@layer base {
+    
+    body {
+        @apply bg-dark-blue lg:overflow-hidden lg:flex lg:h-screen lg:justify-center lg:items-center;
+    }
+
+    main {
+        @apply bg-dark-purple w-10/12 mx-auto mt-20 mb-10 rounded-lg lg:flex-row-reverse lg:min-w-[1100px] lg:max-w-[1300px] lg:h-[440px] lg:relative;
+    }
+
+    img {
+        @apply mix-blend-multiply w-full h-full lg:rounded-r-lg;
+    }
+
+    h1 {
+        @apply font-inter font-bold px-4 mt-7 text-white text-3xl text-center lg:text-5xl lg:text-left lg:w-2/5;
+    }
+
+    h2 {
+        @apply font-inter font-bold text-white text-2xl;
+    }
+
+    h3 {
+        @apply font-lexen text-white text-sm opacity-60;
+    }
+
+    p {
+        @apply px-4 mt-5 text-center text-white opacity-75 font-inter font-normal lg:text-left lg:w-2/5;
+    }
+
+    section {
+        @apply text-center pb-10 lg:flex lg:text-left lg:px-4 lg:absolute lg:bottom-0;
+    }
+
+    section > div {
+        @apply mt-8 lg:mr-20;
+    }
+
+
+
+}
